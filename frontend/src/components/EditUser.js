@@ -47,7 +47,7 @@ const EditUser = () => {
                         <div className="control">
                             <input
                                 type="text"
-                                className="input"
+                                className="input is-primary"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 placeholder='Masukan Name'
@@ -59,7 +59,7 @@ const EditUser = () => {
                         <div className="control">
                             <input
                                 type="text"
-                                className="input"
+                                className="input is-primary"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder='Masukan Email' />
@@ -68,7 +68,7 @@ const EditUser = () => {
                     <div className="field">
                         <label className="label">Gender</label>
                         <div className="control">
-                            <div className="select is-fullwidth">
+                            <div className="select is-fullwidth is-primary">
                                 <select value={gender}
                                     onChange={(e) => setGender(e.target.value)}>
                                     <option value="Male">Male</option>
@@ -77,8 +77,8 @@ const EditUser = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="field">
-                        <button type='submit' className='button is-success'>Update</button>
+                    <div className="field is-flex is-justify-content-center">
+                        <button type='submit' className='button is-success is-centered'>Update</button>
                     </div>
                 </form>
             </div>
