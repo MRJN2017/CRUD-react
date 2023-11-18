@@ -27,7 +27,7 @@ const UserList  = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {users.map((user, index)=>(
+                    {users.map((user, index)=>( 
                     <tr key={user.id}>
                         <td>{index + 1}</td>
                         <td>{user.name}</td>
